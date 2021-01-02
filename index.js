@@ -1,6 +1,8 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
+var choice = "";
+
 //prompting the user to choose synchronous or asynchronous
 inquirer.prompt([
   {
@@ -10,5 +12,9 @@ inquirer.prompt([
     choices: ['Synchronously', 'Asynchronously']
   }
 ]).then(answers => {
-  var choice = answers.syncAsync;
+  if (answers.syncAsync === "Synchronously") {
+    console.log("Sync option selected");
+  } else {
+    console.log("Async option selected")
+  }
 });
