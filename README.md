@@ -69,7 +69,9 @@
 
 * macOS High Sierra Version 10.13.6
 * Adobe Illustrator Version 23.1 (Logo design)
-* npm Version 6.14.10
+* npm version 6.14.10
+* Node.js version 12.16.2
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
