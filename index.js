@@ -23,8 +23,10 @@ inquirer.prompt([
   } else {
     console.log("Asynchronously reading sample.txt...");
     fs.readFile('sample.txt', 'utf8', function(err, data){
+      console.log(data);
       console.log("Asynchronously writing output.txt...");
       fs.writeFile('output.txt', data, (err) => {});
+      console.log("Done.");
     });
   }
 });
