@@ -20,8 +20,11 @@ inquirer.prompt([
     console.log("Synchronously writing output.txt...");
     fs.writeFileSync("output.txt", sampleText);
     console.log("Done.");
-
   } else {
-    console.log("Async option selected")
+    console.log("Asynchronously reading sample.txt...");
+    fs.readFile('sample.txt', 'utf8', function(err, data){
+      console.log("Asynchronously writing output.txt...");
+      fs.writeFile('output.txt', data, (err) => {});
+    });
   }
 });
