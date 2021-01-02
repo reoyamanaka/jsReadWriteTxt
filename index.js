@@ -13,7 +13,14 @@ inquirer.prompt([
   }
 ]).then(answers => {
   if (answers.syncAsync === "Synchronously") {
-    console.log("Sync option selected");
+    console.log("Synchronously reading sample.txt...");
+    var sampleText = fs.readFileSync('sample.txt', 'utf8');
+    console.log(sampleText);
+
+    console.log("Synchronously writing output.txt...");
+    fs.writeFileSync("output.txt", sampleText);
+    console.log("Done.");
+
   } else {
     console.log("Async option selected")
   }
