@@ -1,0 +1,37 @@
+{
+  "name": "jsreadwritetxt",
+  "version": "1.0.0",
+  "description": "A Node.js program that reads and writes text files synchronously and asynchronously using the Node.js File System Module and Inquirer.js.",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reoyamanaka/jsReadWriteTxt.git"
+  },
+  "keywords": [
+    "javascript",
+    "js",
+    "node",
+    "nodejs",
+    "inquirerjs",
+    "inquirer",
+    "syncronous",
+    "asyncronous",
+    "fs",
+    "fsjs",
+    "file",
+    "system"
+  ],
+  "author": "Reo Yamanaka",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/reoyamanaka/jsReadWriteTxt/issues"
+  },
+  "homepage": "https://github.com/reoyamanaka/jsReadWriteTxt#readme"
+}
