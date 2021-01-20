@@ -91,9 +91,9 @@ To get a local copy up and running follow these simple steps.
    ```sh
    git clone https://github.com/reoyamanaka/jsReadWriteTxt.git
    ```
-2. Install Inquirer.js
+2. Install NPM packages
    ```sh
-   npm install inquirer
+   npm install
    ```
 
 
